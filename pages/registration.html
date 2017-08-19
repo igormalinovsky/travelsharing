@@ -14,11 +14,10 @@
     <script src="../resources/js/services/commentsService.js"></script>
     <script src="../resources/js/services/routeServise.js"></script>
     <script src="../resources/js/services/userService.js"></script>
+
+    <script src="../resources/js/utils/registrationSubmitByName.js"></script>
 </head>
 <body>
-<script>
-    openDB();
-</script>
 <script>
     openDB();
 </script>
@@ -36,11 +35,11 @@
         </nav>
     </header>
     <main class="registration-main">
-        <form action="" name="registration" class="registration">
-            <input type="text" name="login" class="registration-input" placeholder="Логін">
-            <input type="password" name="pass" class="registration-input" placeholder="Пароль">
-            <input type="email" name="email" class="registration-input" placeholder="Електронна пошта">
-            <button type="submit" id="registration-btn">Зареєструватися</button>
+        <form action="#" method="post" name="registration" class="registration" id="registration">
+            <input id="login" type="text" name="login" class="registration-input" placeholder="Логін">
+            <input id="password" type="password" name="pass" class="registration-input" placeholder="Пароль">
+            <input id="email" type="email" name="email" class="registration-input" placeholder="Електронна пошта">
+            <input type="button" name="submit_id" id="registration-btn" value="Зареєструватися" onclick="submit_by_name()"/>
             <button type="submit" id="facebook"></button>
             <button type="submit" id="google"></button>
         </form>
