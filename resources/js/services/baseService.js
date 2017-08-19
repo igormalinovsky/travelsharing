@@ -1,6 +1,6 @@
 var db = null;
-var DBNAME = "travelDev2442";
-var DBVER = 5;
+var DBNAME = "besTrip";
+var DBVER = 1;
 
 function openDB() {
     var request = indexedDB.open(DBNAME, DBVER);
@@ -21,8 +21,8 @@ function openDB() {
             });
         }
 
-        if (!thisDB.objectStoreNames.contains("routes")) {
-            store = thisDB.createObjectStore("routes", {
+        if (!thisDB.objectStoreNames.contains("routers")) {
+            store = thisDB.createObjectStore("routers", {
                 keyPath: "title"
             });
 

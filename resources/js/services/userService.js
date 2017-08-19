@@ -5,6 +5,7 @@ function addUser(o) {
     var request = store.add(o);
 
     request.onsuccess = function (e) {
+        console.log("user created");
     };
 
     request.onerror = function (e) {
@@ -17,6 +18,7 @@ function findUserByKey(key) {
     var request = store.get(key);
 
     request.onsuccess = function (e) {
+        console.log("user fined");
     };
 }
 
@@ -28,6 +30,8 @@ function findAllUsers() {
     cursor.onsuccess = function (e) {
         var res = e.target.result;
         if (res) {
+            console.log("key", res.key);
+            console.log("value", res.value);
             res.
             continue ();
         }
@@ -47,6 +51,7 @@ function updateByKey(key) {
         var request = store.put(data);
 
         request.onsuccess = function (e) {
+            console.log("user updated")
         };
 
         request.onerror = function (e) {

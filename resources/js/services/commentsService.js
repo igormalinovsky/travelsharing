@@ -1,10 +1,11 @@
-function add(o) {
+function addComment(o) {
     var tx = db.transaction(["comments"], "readwrite");
     var store = tx.objectStore("comments");
 
     var request = store.add(o);
 
     request.onsuccess = function (e) {
+        console.log("comment added")
     };
 
     request.onerror = function (e) {
@@ -17,6 +18,7 @@ function findByKey(key) {
     var request = store.get(key);
 
     request.onsuccess = function (e) {
+        console.log("comment fined")
     };
 }
 
@@ -28,6 +30,7 @@ function findAll() {
     cursor.onsuccess = function (e) {
         var res = e.target.result;
         if (res) {
+            console.log("comments fined");
             res.
             continue ();
         }
@@ -43,6 +46,7 @@ function findByRange(from, to) {
     cursor.onsuccess = function (e) {
         var res = e.target.result;
         if (res) {
+            console.log("comments range fined");
             res.continue();
         }
     };
