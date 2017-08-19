@@ -97,10 +97,11 @@ main{
 .event{
     width:94%;
     height:auto;
-    padding:15px 3%;
+    padding:30px 3%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color:darkgrey;
 }
 .start-event>*{
     margin-bottom: 20px;
@@ -120,6 +121,50 @@ main{
     border-radius:8px;
     font-size:20px;
 }
+.route-n-blog{
+    width:94%;
+    height:auto;
+    padding:30px 3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.route-n-blog:last-child{
+    background-color: gainsboro;
+}
+.route-n-blog-title{
+    width:100%;
+    text-align:center;
+    padding:15px 0;
+}
+.route-n-blog-item{
+    width:90%;
+    height:300px;
+    border:1px solid grey;
+    padding:10px;
+    margin-top:20px;
+    border-radius:15px;
+    background-color: white;
+    color:black;
+}
+#blackmountain{
+    background-image: url(../img/blackmountain.jpg);
+}
+#burningSeptember{
+    background-image: url(../img/september.jpg);
+}
+#prague{
+    background-image: url(../img/prague.jpg);
+}
+.preview{
+    width:100%;
+    height:250px;
+    background-size:cover;
+    border-radius:10px;
+}
+.more:hover{
+    color:darkblue;
+}
 @media(min-width:768px){
     .header-nav>*{
         margin:0 15px;
@@ -130,7 +175,7 @@ main{
     }
     .event{
         width:80%;
-        padding:15px 10%;
+        padding:30px 10%;
         flex-direction:row;
     }
     .event-picture{
@@ -146,6 +191,15 @@ main{
         display:flex;
         flex-direction: column;
         justify-content:center;
+    }
+    .route-n-blog{
+        width:80%;
+        padding:30px 10%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .route-n-blog-item{
+        width:45%;
     }
 }
 @media(min-width:992px){
@@ -170,11 +224,17 @@ main{
     }
     .event{
         width:70%;
-        padding:15px 15%;
+        padding:50px 15%;
+    }
+    .route-n-blog{
+        width:70%;
+        padding:30px 15% 80px 15%;
     }
 }
 @media(min-width:1150px){
-    
+    .route-n-blog-item{
+        width:30%;
+    }
 }
 @media(min-width:1300px){
     
@@ -184,6 +244,7 @@ main{
     background-color: grey;
     color: white;
     text-align: center;
+    padding:15px 0;
 }
 .blog-article{
     margin-top: 40px;
