@@ -165,6 +165,67 @@ main{
 .more:hover{
     color:darkblue;
 }
+.footer{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding:15px 0;
+}
+.blog-article{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.registration-main{
+    width:100%;
+    height:600px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.registration{
+    width:400px;
+    height:450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:beige;
+    padding:10px;
+    border-radius:10px;
+}
+.registration-input{
+    width:250px;
+    height:30px;
+    padding:5px;
+    border-radius:8px;
+    margin-bottom:15px;
+    border:1px solid black;
+}
+#registration-btn{
+    width:250px;
+    height:51px;
+    border:0;
+    margin-bottom:15px;
+    border-radius:5px;
+    font-size:20px;
+}
+#facebook{
+    width:250px;
+    height:51px;
+    border:0;
+    background-image: url(../img/fb.jpg);
+    background-size: cover;
+    margin-bottom:15px;
+}
+#google{
+    width:250px;
+    height:53px;
+    border:0;
+    background-image: url(../img/g+.jpg);
+    background-size: cover;
+}
 @media(min-width:768px){
     .header-nav>*{
         margin:0 15px;
@@ -235,20 +296,4 @@ main{
     .route-n-blog-item{
         width:30%;
     }
-}
-@media(min-width:1300px){
-    
-}
-
-.footer{
-    background-color: grey;
-    color: white;
-    text-align: center;
-    padding:15px 0;
-}
-.blog-article{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    
 }
