@@ -8,8 +8,17 @@
     <title>Подія</title>
     <script src="../resources/js/main.js"></script>
     <link href="../resources/style/style.css" rel="stylesheet">
+
+    <script src="../resources/js/services/baseService.js"></script>
+    <script src="../resources/js/services/blogService.js"></script>
+    <script src="../resources/js/services/commentsService.js"></script>
+    <script src="../resources/js/services/routeServise.js"></script>
+    <script src="../resources/js/services/userService.js"></script>
 </head>
 <body>
+  <script>
+    openDB();
+</script>
     <header>
         <a href="" class="logo"></a>
         <input type="checkbox" id="seek">
@@ -42,5 +51,48 @@
             <button>Надіслати</button>
         </form>
     </main>
+<main>
+    <div>
+        <div class="eventImg">
+            <!-- img src="../resources/img/img-event-foolback.jpg" class="img-event" alt="" -->
+        </div>
+                <br />
+        <button>
+            <img src="../resources/img/plus-icon.jpg" alt="Join" style="vertical-align: middle">
+        </button>
+        <!--<button>Love</button> В разі чого, можна розширити-->
+        <button>
+            <img src="../resources/img/share-icon.jpg" alt="Share" style="vertical-align: middle">
+        </button>
+        <button>
+            <img src="../resources/img/map-icon.jpg" alt="On map" style="vertical-align: middle">
+        </button>
+        <hr />
+    </div>
+    <section class="aboutEvent">
+            <div class="layout">
+                    <div class="col1">
+                            <p>Організатор мандрівки</p> <!-- Звичайний лінк на профіль користувача -->
+                            <p class="eventOrganizator">...</p>
+                    </div>
+                    <div class="col2">
+                            <p>Дата мандрівки</p> <!-- Календар -->
+                            <p class="eventDate">...</p>
+                    </div>
+                    <div class="col3">
+                        <p>Вартість мандрівки</p>
+                        <p class="eventCosts">...</p>
+                    </div>
+            </div>        
+    </section>
+    <article class="eventArticle">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</article>
+    <form class="comment">
+        <p class="addComment">Додати коментар:</p>
+        <div>
+            <textarea style="width:100%" rows="5"></textarea>
+        </div><br />
+        <button class="send-comment">Надіслати</button>
+    </form>
+</main>
 </body>
 </html>
