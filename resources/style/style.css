@@ -190,7 +190,7 @@ h2{
 }
 .registration-main{
     width:100%;
-    height:600px;
+    height:800px;
     display:flex;
     flex-direction: column;
     justify-content:center;
@@ -241,20 +241,96 @@ h2{
 }
 .user-card{
     width:70%;
-    height:400px;
-    margin:30px 15%;
+    height:250px;
+    padding:30px 15%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .user-pic{
-    width:200px;
-    height:200px;
+    width:150px;
+    height:150px;
     border-radius:50%;
+    margin-right:20px;
 }
 .user-info{
+    width:700px;
+    height:200px;
     margin:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.user-tabs{
+    width:100%;
+    height:600px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.information{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.information>*{
+    margin-right:70px;
+}
+.rating{
+    width: 25px;
+    height: 24px;
+}
+input[name="user-tabs"]{
+    display: none;
+}
+#suggestions:checked+.user-stuff,#calendar:checked+.user-stuff,#by-me:checked+.user-stuff,#liked:checked+.user-stuff{
+    display:flex;
+}
+.user-stuff{
+    width:92%;
+    height:500px;
+    padding:0 4%;
+    display:none;
+    background-color:gainsboro;
+    flex-direction: column;
+}
+.user-stuff img{
+    width:100%;
+    height:300px;
+}
+.user-name{
+    font-size:24px;
+    margin:10px 0;
+}
+.day{
+    width:100%;
+    height:30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:#4db6ac;
+    padding:10px 0;
+}
+.day:nth-child(2n){
+    background-color:#ff8a65; 
+}
+.date{
+    width:20%;
+    height:30px;
+    font-size:25px;
+    text-align:center;
+}
+.event{
+    width:60%;
+    height:30px;
+}
+.participate{
+    width:10%;
+    height:30px;
 }
 @media(min-width:768px){
     header{
@@ -283,6 +359,10 @@ h2{
     .search-btn{
         display:none;
     }
+    .user-stuff{
+        width:80%;
+        padding:0 10%;
+    }
 }
 @media(min-width:992px){
     .search{
@@ -309,6 +389,10 @@ h2{
     }
     .search-form input{
         width:400px;
+    }
+    .user-stuff{
+        width:70%;
+        padding:0 15%;
     }
 }
 @media(min-width:1168px){
