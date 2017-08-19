@@ -97,10 +97,11 @@ main{
 .event{
     width:94%;
     height:auto;
-    padding:15px 3%;
+    padding:30px 3%;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color:darkgrey;
 }
 .start-event>*{
     margin-bottom: 20px;
@@ -120,6 +121,111 @@ main{
     border-radius:8px;
     font-size:20px;
 }
+.route-n-blog{
+    width:94%;
+    height:auto;
+    padding:30px 3%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.route-n-blog:last-child{
+    background-color: gainsboro;
+}
+.route-n-blog-title{
+    width:100%;
+    text-align:center;
+    padding:15px 0;
+}
+.route-n-blog-item{
+    width:90%;
+    height:300px;
+    border:1px solid grey;
+    padding:10px;
+    margin-top:20px;
+    border-radius:15px;
+    background-color: white;
+    color:black;
+}
+#blackmountain{
+    background-image: url(../img/blackmountain.jpg);
+}
+#burningSeptember{
+    background-image: url(../img/september.jpg);
+}
+#prague{
+    background-image: url(../img/prague.jpg);
+}
+.preview{
+    width:100%;
+    height:250px;
+    background-size:cover;
+    border-radius:10px;
+}
+.more:hover{
+    color:darkblue;
+}
+.footer{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding:15px 0;
+}
+.blog-article{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.registration-main{
+    width:100%;
+    height:600px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.registration{
+    width:400px;
+    height:450px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:beige;
+    padding:10px;
+    border-radius:10px;
+}
+.registration-input{
+    width:250px;
+    height:30px;
+    padding:5px;
+    border-radius:8px;
+    margin-bottom:15px;
+    border:1px solid black;
+}
+#registration-btn{
+    width:250px;
+    height:51px;
+    border:0;
+    margin-bottom:15px;
+    border-radius:5px;
+    font-size:20px;
+}
+#facebook{
+    width:250px;
+    height:51px;
+    border:0;
+    background-image: url(../img/fb.jpg);
+    background-size: cover;
+    margin-bottom:15px;
+}
+#google{
+    width:250px;
+    height:53px;
+    border:0;
+    background-image: url(../img/g+.jpg);
+    background-size: cover;
+}
 @media(min-width:768px){
     .header-nav>*{
         margin:0 15px;
@@ -130,7 +236,7 @@ main{
     }
     .event{
         width:80%;
-        padding:15px 10%;
+        padding:30px 10%;
         flex-direction:row;
     }
     .event-picture{
@@ -146,6 +252,15 @@ main{
         display:flex;
         flex-direction: column;
         justify-content:center;
+    }
+    .route-n-blog{
+        width:80%;
+        padding:30px 10%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .route-n-blog-item{
+        width:45%;
     }
 }
 @media(min-width:992px){
@@ -170,24 +285,15 @@ main{
     }
     .event{
         width:70%;
-        padding:15px 15%;
+        padding:50px 15%;
+    }
+    .route-n-blog{
+        width:70%;
+        padding:30px 15% 80px 15%;
     }
 }
 @media(min-width:1150px){
-    
-}
-@media(min-width:1300px){
-    
-}
-
-.footer{
-    background-color: grey;
-    color: white;
-    text-align: center;
-}
-.blog-article{
-    margin-top: 40px;
-    margin-bottom: 40px;
-    text-align: center;
-    
+    .route-n-blog-item{
+        width:30%;
+    }
 }
