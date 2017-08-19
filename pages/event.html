@@ -16,17 +16,41 @@
     <script src="../resources/js/services/userService.js"></script>
 </head>
 <body>
-<script>
+  <script>
     openDB();
 </script>
-<header>
-    <a href="">LOGO</a>
-    <nav class="header-nav">
-        <a href="">Маршрути</a>
-        <a href="">Увійти/Реєстрація</a>
-        <button type="button" class="language">EN</button>
-    </nav>
-</header>
+    <header>
+        <a href="" class="logo"></a>
+        <input type="checkbox" id="seek">
+        <form action="" name="header-form" class="search-form">
+            <input type="text" name="search" placeholder="Search">
+            <button type="button" class="header-serch-btn">Search</button>
+        </form>
+        <nav class="header-nav">
+        <label class="search-btn" for="seek"></label>
+            <a href=""><img src="../resources/img/corner.jpg" class="mini-prof-pic"></a>
+            <a href="">Увійти</a> 
+        </nav>
+    </header>
+    <main>
+        <img src="../resources/img/img-event-foolback.jpg" class="img-event" alt="">
+        <br />
+        <button>Join</button>
+        <!--<button>Love</button> В разі чого, можна розширити-->
+        <button>Share</button>
+        <hr />
+        <div>
+            <p>Організатор мандрівки</p>
+            <p>Дата мандрівки</p>
+            <p>Вартість мандрівки</p>
+        </div>
+        <p>Опис мандрівки</p>
+        <form>
+            <p>Додати коментар:</p>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>Надіслати</button>
+        </form>
+    </main>
 <main>
     <div>
         <div class="eventImg">
