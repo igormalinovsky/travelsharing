@@ -37,23 +37,27 @@
         <hr />
     </div>
     <section class="aboutEvent">
-        <div>
-            <p>Організатор мандрівки</p> <!-- Звичайний лінк на профіль користувача -->
-            <p class="eventOrganizator">...</p>
-        </div>
-        <div>
-            <p>Дата мандрівки</p> <!-- Календар -->
-            <p class="eventDate">...</p>
-        </div>
-        <div>
-            <p>Вартість мандрівки</p>
-            <p class="eventCosts">...</p>
-        </div>
+            <div class="layout">
+                    <div class="col1">
+                            <p>Організатор мандрівки</p> <!-- Звичайний лінк на профіль користувача -->
+                            <p class="eventOrganizator">...</p>
+                    </div>
+                    <div class="col2">
+                            <p>Дата мандрівки</p> <!-- Календар -->
+                            <p class="eventDate">...</p>
+                    </div>
+                    <div class="col3">
+                        <p>Вартість мандрівки</p>
+                        <p class="eventCosts">...</p>
+                    </div>
+            </div>        
     </section>
     <article class="eventArticle">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</article>
     <form class="comment">
-        <p>Додати коментар:</p>
-        <textarea name="" id="" cols="120" rows="5"></textarea>
+        <p class="addComment">Додати коментар:</p>
+        <div>
+            <textarea style="width:100%" rows="5"></textarea>
+        </div><br />
         <button class="send-comment">Надіслати</button>
     </form>
 </main>

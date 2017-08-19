@@ -298,7 +298,7 @@ main{
     }
 }
 .eventArticle{
-    padding: 20px 40px 20px 40px;
+    padding: 80px 40px 20px 40px;
     text-align: justify;
 }
 .comment{
@@ -306,4 +306,25 @@ main{
 }
 .eventImg{
     background: url(../resources/img/img-event-foolback.jpg) no-repeat scroll 0 0 transparent;
+}
+.layout { 
+    position: relative;
+    margin: 20px;
+}
+.layout DIV { position: absolute; }
+.col1 { 
+    background: grey; left: 0; right: 50%; margin-right: 100px;
+    text-align: center
+}
+.col2 { 
+    background: grey; width: 200px; left: 50%; margin-left: -100px; 
+    text-align: center;
+
+}
+.col3 { 
+    background: grey; left: 50%; right: 0; margin-left: 100px; 
+    text-align: center;
+}
+.addComment{
+    padding: 10px;
 }
