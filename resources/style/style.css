@@ -332,7 +332,8 @@ input[name="user-tabs"]{
     text-align: justify;
 }
 .comment{
-    padding: 20px 40px 20px 80px;
+    width:70%;
+    margin:15px 15%;
 }
 .eventImg{
     background: url(../resources/img/img-event-foolback.jpg) no-repeat scroll 0 0 transparent;
@@ -365,19 +366,21 @@ input[name="user-tabs"]{
     text-align: center;
 }
 .img-event{
-    text-align: center;
+    width:70%;
+    margin:15px 15%;
 }
 .titleArticle{
     margin: 40px;
     text-align: center;
 }
 .textArticle{
-    margin: 20px 75px 20px 75px;
+    width:70%;
+    margin:15px 15%;
     text-align: justify;
 }
 .shareArticle{
-    width: 90%;
-    margin: 5px 0px 10px 0px;
+    width: 70%;
+    margin:15px 15%;
     text-align: right;
 }
 .createRoute{
