@@ -5,6 +5,7 @@ function addBlog(o) {
     var request = store.add(o);
 
     request.onsuccess = function (e) {
+        console.log("blog added")
     };
 
     request.onerror = function (e) {
@@ -17,6 +18,7 @@ function findBlogByKey(key) {
     var request = store.get(key);
 
     request.onsuccess = function (e) {
+        console.log("blog fined")
     };
 }
 
@@ -28,6 +30,7 @@ function findAllBlogs() {
     cursor.onsuccess = function (e) {
         var res = e.target.result;
         if (res) {
+            console.log("blogs fined");
             res.
             continue ();
         }
@@ -43,6 +46,7 @@ function findBlogsByRange(from, to) {
     cursor.onsuccess = function (e) {
         var res = e.target.result;
         if (res) {
+            console.log("fined blogs by range");
             res.continue();
         }
     };
