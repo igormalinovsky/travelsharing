@@ -14,11 +14,18 @@
     <script src="../resources/js/services/commentsService.js"></script>
     <script src="../resources/js/services/routeServise.js"></script>
     <script src="../resources/js/services/userService.js"></script>
+
+    <script src="../resources/js/utils/preparingUserData.js"></script>
 </head>
 <body>
 <script>
     openDB();
+
+    var singleUserData;
+    prepareSingleUserData("malinovsky.igor@gmail.com")
+
 </script>
+
     <header>
         <a href="" class="logo"></a>
         <input type="checkbox" id="seek">
@@ -28,15 +35,15 @@
         </form>
         <nav class="header-nav">
         <label class="search-btn" for="seek"></label>
-            <a href=""><img src="../resources/img/corner.jpg" class="mini-prof-pic"></a>
-            <a href="">Увійти</a> 
+            <a href="user.html"><img src="../resources/img/corner.jpg" class="mini-prof-pic"></a>
+            <a href="registration.html">Увійти</a>
         </nav>
     </header>
     <main class="registration-main">
         <section class="user-card">
             <img src="../resources/img/justin-timberlake.jpg" alt="" class="user-pic">
             <article class="user-info">
-                <h2 class="user-name">Justin Timberlake</h2>
+                <h2 class="user-name"></h2>
                 <section class="information">
                     <p>Number: +363 685 55 86</p>
                     <div>
@@ -47,7 +54,7 @@
                         <img class="rating" src="../resources/img/empty-star.png">
                     </div>
                     <a href=""><img class="rating" src="../resources/img/fb_icon_325x325.png"></a>
-                    <p>E-Mail:sneaker@pimp.uk</p>
+                    <p class="emailInfo"></p>
                 </section>
             </article>
         </section>
@@ -142,6 +149,8 @@
             </article>
         </section>
     </main>
+    <script>
 
+    </script>
 </body>
 </html>
