@@ -12,85 +12,165 @@
 <body>
     <header>
         <a href="" class="logo"></a>
+        <input type="checkbox" id="seek">
+        <form action="" name="header-form" class="search-form">
+            <input type="text" name="search" placeholder="Search">
+            <button type="button" class="header-serch-btn">Search</button>
+        </form>
         <nav class="header-nav">
-            <a href="">Маршрути</a>
-            <a href="">Увійти/Реєстрація</a>
-            <button type="button" class="language">EG</button>  
+        <label class="search-btn" for="seek"></label>
+            <a href=""><img src="resources/img/corner.jpg" class="mini-prof-pic"></a>
+            <a href="">Увійти</a> 
         </nav>
+        <div class="horizontal"></div>
+        <section class="tabs">
+            <label class="tab-btn" for="one">Маршрути</label>
+            <label class="tab-btn" for="two">В топі</label>
+            <label class="tab-btn" for="three">Блог</label>
+        </section>
     </header>
     <main>
-        <section class="search">
-            <article class="main-search">
-                <input type="text" name="start" placeholder="Звідки">
-                <input type="text" name="finish" placeholder="Куди">
+        <section class="events">
+            <input type="radio" id="one" name="tab" checked>
+            <article class="type-of-events">
+                <h2 class="event-headers">Море</h2>
+                <a href="" class="event-item">
+                    <img src="resources/img/istanbul.jpg">
+                    <h2>Я люблю Стамбул</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/cyprus.jpg">
+                    <h2>Сонячний Кіпр</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/barcelona.jpg">
+                    <h2>Пора в Барселону!</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/costa-brava.jpg">
+                    <h2>Подорож в Коста-Браву</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <div class="horizontal"></div>
+                <h2 class="event-headers">Гори</h2>
+                <a href="" class="event-item">
+                    <img src="resources/img/st-petersburgs.jpg">
+                    <h2>Північна Пальміра</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/tailand.jpg">
+                    <h2>Контрасти Тайланду</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/bangkok.jpg">
+                    <h2>Новорічний Бангкок</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/prague.jpg">
+                    <h2>П'янка Прага</h2>
+                    <small>Докладніше→</small>
+                </a>
             </article>
-            <article class="main-search">
-                <input type="date" name="from" placeholder="З">
-                <input type="date" name="to" placeholder="По">
+            <input type="radio" id="two" name="tab">
+            <article class="type-of-events">
+                <h2 class="event-headers">Море</h2>
+                <a href="" class="event-item">
+                    <img src="resources/img/cyprus.jpg">
+                    <h2>Сонячний Кіпр</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/istanbul.jpg">
+                    <h2>Я люблю Стамбул</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/barcelona.jpg">
+                    <h2>Пора в Барселону!</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/costa-brava.jpg">
+                    <h2>Подорож в Коста-Браву</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <div class="horizontal"></div>
+                <h2 class="event-headers">Гори</h2>
+                <a href="" class="event-item">
+                    <img src="resources/img/st-petersburgs.jpg">
+                    <h2>Північна Пальміра</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/prague.jpg">
+                    <h2>П'янка Прага</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/tailand.jpg">
+                    <h2>Контрасти Тайланду</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/bangkok.jpg">
+                    <h2>Новорічний Бангкок</h2>
+                    <small>Докладніше→</small>
+                </a>
             </article>
-            <button type="button" class="search-btn"><a href="">Search</a></button>
-            <article class="main-events">
-                <button class="main-events-btn" ><a href="http://poshuk-poputnikiv/" >ГЛЯНУТИ ВСІ МАРШРУТИ</a></button>
+            <input type="radio" id="three" name="tab">
+            <article class="type-of-events">
+                <h2 class="event-headers">Море</h2>
+                <a href="" class="event-item">
+                    <img src="resources/img/bangkok.jpg">
+                    <h2>Новорічний Бангкок</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/costa-brava.jpg">
+                    <h2>Подорож в Коста-Браву</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/barcelona.jpg">
+                    <h2>Пора в Барселону!</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/istanbul.jpg">
+                    <h2>Я люблю Стамбул</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <div class="horizontal"></div>
+                <h2 class="event-headers">Гори</h2>
+                <a href="" class="event-item">
+                    <img src="resources/img/cyprus.jpg">
+                    <h2>Сонячний Кіпр</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/st-petersburgs.jpg">
+                    <h2>Північна Пальміра</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/prague.jpg">
+                    <h2>П'янка Прага</h2>
+                    <small>Докладніше→</small>
+                </a>
+                <a href="" class="event-item">
+                    <img src="resources/img/tailand.jpg">
+                    <h2>Контрасти Тайланду</h2>
+                    <small>Докладніше→</small>
+                </a>
             </article>
-        </section>
-        <section class="event">
-            <img class="event-picture" src="resources/img/80-littres.jpg">
-            <article class="start-event">
-                <h2>Зібрався в похід</h2>
-                <p>Разом завжди веселіше! Маршрут в товаристві це: нові знайомства, нові враження, нові горизонти...</p>
-                <button type="button" class="start-event-btn">Запропонувати маршрут</button>
-            </article>
-        </section>
-        <section class="route-n-blog">
-            <h2 class="route-n-blog-title">Найпопуляршіні маршрути:</h2>
-            <a href="" class="route-n-blog-item" id="blackmountain">
-                <h2>Прогулянка Чорногорою</h2>
-                <p class="route-start">30 серпня 2017</p>
-            </a>
-            <a href="" class="route-n-blog-item" id="burningSeptember">
-                <h2>"Сентябрь горит!"</h2>
-                <p class="route-start">1 вересня 2017</p>
-            </a>
-            <a href="" class="route-n-blog-item" id="prague">
-                <h2>Привіт, Прага</h2>
-                <p class="route-start">21 серпня 2017</p>
-            </a>
-        </section>
-        <section class="route-n-blog">
-            <h2 class="route-n-blog-title">Блоги</h2>
-            <a href="" class="route-n-blog-item">
-                <img src="resources/img/istanbul.jpg" class="preview">
-                <h2>Я люблю Стамбул</h2>
-                <p class="more">Докладніше→</p>
-            </a>
-            <a href="" class="route-n-blog-item">
-                <img src="resources/img/cyprus.jpg" class="preview">
-                <h2>Сонячний Кіпр</h2>
-                <p class="more">Докладніше→</p>
-            </a>
-            <a href="" class="route-n-blog-item">
-                <img src="resources/img/barcelona.jpg" class="preview">
-                <h2>Пора їхати в Барселону</h2>
-                <p class="more">Докладніше→</p>
-            </a>
-            <a href="" class="route-n-blog-item">
-                <img src="resources/img/costa-brava.jpg" class="preview">
-                <h2>Подорож в Коста-Браву</h2>
-                <p class="more">Докладніше→</p>
-            </a>
-            <a href="" class="route-n-blog-item">
-                <img src="resources/img/st-petersburgs.jpg" class="preview">
-                <h2>Північна Пальміра</h2>
-                <p class="more">Докладніше→</p>
-            </a>
-            <a href="" class="route-n-blog-item">
-                <img src="resources/img/tailand.jpg" class="preview">
-                <h2>Котрасти Тайланду</h2>
-                <p class="more">Докладніше→</p>
-            </a>
         </section>
     </main>
-  
     <footer>
         <p class="footer">All right reserve. © BestTrip 2017</p>
     </footer>
