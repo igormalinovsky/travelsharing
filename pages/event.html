@@ -33,66 +33,30 @@
         </nav>
     </header>
     <main>
-        <img src="../resources/img/img-event-foolback.jpg" class="img-event" alt="">
-        <br />
-        <button>Join</button>
-        <!--<button>Love</button> В разі чого, можна розширити-->
-        <button>Share</button>
-        <hr />
-        <div>
-            <p>Організатор мандрівки</p>
-            <p>Дата мандрівки</p>
-            <p>Вартість мандрівки</p>
-        </div>
-        <p>Опис мандрівки</p>
-        <form>
-            <p>Додати коментар:</p>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button>Надіслати</button>
+        <section class="event-buttons">
+            <button class="event-btn">
+                <img src="../resources/img/plus-icon.jpg">
+            </button>
+            <button class="event-btn">
+                <img src="../resources/img/share-icon.jpg">
+            </button>
+            <button class="event-btn">
+                <img src="../resources/img/map-icon.jpg">
+            </button>
+        </section>   
+        <section class="event-info">
+            <a href="" class="event-autor"><h2>User Name</h2></a>
+            <h2 class="event-date">23 серпня</h2>
+            <h2 class="event-autor">Free</h2>
+            <p class="event-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+        <form class="comment">
+            <p class="addComment">Додати коментар:</p>
+            <textarea style="width:100%" rows="5"></textarea>
+            <br />
+            <br />
+            <button class="create-route-btn">Надіслати</button>
         </form>
     </main>
-<main>
-    <div>
-        <div class="eventImg">
-            <!-- img src="../resources/img/img-event-foolback.jpg" class="img-event" alt="" -->
-        </div>
-                <br />
-        <button>
-            <img src="../resources/img/plus-icon.jpg" alt="Join" style="vertical-align: middle">
-        </button>
-        <!--<button>Love</button> В разі чого, можна розширити-->
-        <button>
-            <img src="../resources/img/share-icon.jpg" alt="Share" style="vertical-align: middle">
-        </button>
-        <button>
-            <img src="../resources/img/map-icon.jpg" alt="On map" style="vertical-align: middle">
-        </button>
-        <hr />
-    </div>
-    <section class="aboutEvent">
-            <div class="layout">
-                    <div class="col1">
-                            <p>Організатор мандрівки</p> <!-- Звичайний лінк на профіль користувача -->
-                            <p class="eventOrganizator">...</p>
-                    </div>
-                    <div class="col2">
-                            <p>Дата мандрівки</p> <!-- Календар -->
-                            <p class="eventDate">...</p>
-                    </div>
-                    <div class="col3">
-                        <p>Вартість мандрівки</p>
-                        <p class="eventCosts">...</p>
-                    </div>
-            </div>        
-    </section>
-    <article class="eventArticle">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів. "Риба" не тільки успішно пережила п'ять століть, але й прижилася в електронному верстуванні, залишаючись по суті незмінною. Вона популяризувалась в 60-их роках минулого сторіччя завдяки виданню зразків шрифтів Letraset, які містили уривки з Lorem Ipsum, і вдруге - нещодавно завдяки програмам комп'ютерного верстування на кшталт Aldus Pagemaker, які використовували різні версії Lorem Ipsum.</article>
-    <form class="comment">
-        <p class="addComment">Додати коментар:</p>
-        <div>
-            <textarea style="width:100%" rows="5"></textarea>
-        </div><br />
-        <button class="send-comment">Надіслати</button>
-    </form>
-</main>
 </body>
 </html>
