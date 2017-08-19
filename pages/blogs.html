@@ -8,16 +8,31 @@
     <title>Блоги</title>
     <script src="../resources/js/main.js"></script>
     <link href="../resources/style/style.css" rel="stylesheet">
+
+    <script src="../resources/js/services/baseService.js"></script>
+    <script src="../resources/js/services/blogService.js"></script>
+    <script src="../resources/js/services/commentsService.js"></script>
+    <script src="../resources/js/services/routeServise.js"></script>
+    <script src="../resources/js/services/userService.js"></script>
 </head>
 <body>
-<header>
-    <a href="">LOGO</a>
-    <nav class="header-nav">
-        <a href="">Маршрути</a>
-        <a href="">Увійти/Реєстрація</a>
-        <button type="button" class="language">EG</button>
-    </nav>
-</header>
+  <script>
+    openDB();
+</script>
+
+    <header>
+        <a href="" class="logo"></a>
+        <input type="checkbox" id="seek">
+        <form action="" name="header-form" class="search-form">
+            <input type="text" name="search" placeholder="Search">
+            <button type="button" class="header-serch-btn">Search</button>
+        </form>
+        <nav class="header-nav">
+        <label class="search-btn" for="seek"></label>
+            <a href=""><img src="../resources/img/corner.jpg" class="mini-prof-pic"></a>
+            <a href="">Увійти</a> 
+        </nav>
+    </header>
 
 </body>
 </html>
