@@ -41,3 +41,9 @@ header{
 @media(min-width:1300px){
     
 }
+
+.footer{
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
