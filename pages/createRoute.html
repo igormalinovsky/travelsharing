@@ -16,19 +16,6 @@
     <script src="../resources/js/services/userService.js"></script>
 </head>
 <body>
-<main class="createRoute">
-    <form name="createRoute" createRoute="createRoute">
-        <input type="text" name="title" class="" placeholder="Тема мандрівки">
-        <p>Файл .jpg <button type="file" name="upload" class="">Обрати</button></p>
-        <input type="date"name="date" class="" placeholder="Дата мандрівки"></input>
-        <input type="text" name="costs" class="" placeholder="Вартість мандрівки"></input>
-        <input type="text" name="article" class="" placeholder="Опис мандрівки"></input><br />
-        <button type="submit" value="">Опублікувати</button>
-    </form>
-</main>
-  <script>
-    openDB();
-</script>
     <header>
         <a href="" class="logo"></a>
         <input type="checkbox" id="seek">
@@ -42,5 +29,18 @@
             <a href="">Увійти</a> 
         </nav>
     </header>
+    <main class="registration-main">
+        <form name="createRoute" class="createRoute">
+            <input type="text" name="title" class="registration-input"  placeholder="Тема мандрівки">
+            <p>Файл .jpg <button type="file" name="upload" class="create-route-btn">Обрати</button></p>
+            <input type="date"name="date" class="registration-input"  placeholder="Дата мандрівки">
+            <input type="text" name="costs" class="registration-input"  placeholder="Вартість мандрівки">
+            <input type="text" name="article" class="registration-input"  placeholder="Опис мандрівки"><br />
+            <button type="submit" value="" class="create-route-btn" >Опублікувати</button>
+        </form>
+    </main>
+  <script>
+    openDB();
+    </script>
 </body>
 </html>
