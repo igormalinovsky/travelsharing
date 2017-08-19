@@ -297,3 +297,13 @@ main{
         width:30%;
     }
 }
+.eventArticle{
+    padding: 20px 40px 20px 40px;
+    text-align: justify;
+}
+.comment{
+    padding: 20px 40px 20px 80px;
+}
+.eventImg{
+    background: url(../resources/img/img-event-foolback.jpg) no-repeat scroll 0 0 transparent;
+}
