@@ -5,7 +5,7 @@ function submit_by_name() {
     var x = document.getElementsByName('registration');
     x[0].submit(); //form submission
 
-    var userObejct = {name : name, email : email, password:password}
+    var userObejct = {name : name, email : email, password:password};
 
     addUser(userObejct);
 }
