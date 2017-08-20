@@ -19,6 +19,7 @@ function findUserByKey(key) {
 
     request.onsuccess = function (e) {
         console.log("user fined");
+        singleUserData = e.target.result;
     };
 }
 
