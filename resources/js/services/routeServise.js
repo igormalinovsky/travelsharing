@@ -29,11 +29,13 @@ function findAllRouters() {
 
     cursor.onsuccess = function (e) {
         var res = e.target.result;
+
         if (res) {
-            console.log("key", res.key);
-            console.log("value", res.value);
             res.
             continue ();
+            // tripInfo.push(res.value);
+            console.log(tripInfo);
+            tripInfo.push(res.value);
         }
     };
 }
