@@ -22,8 +22,8 @@
     openDB();
 
     var singleUserData;
-    prepareSingleUserData("malinovsky.igor@gmail.com")
-
+    var tripInfo= [];
+    prepareSingleUserData("malinovsky.igor@gmail.com");
 </script>
 
     <header>
@@ -66,37 +66,8 @@
                 <label class="tab-btn" for="liked">Вподобані</label>
             </article>
             <input type="radio" name="user-tabs" id="suggestions" checked>
-            <article class="user-stuff">
-                <section class="day">
-                    <arcticle class="date">24 серпня</arcticle>
-                    <arcticle class="event">Поїздка автосопом до Києва</arcticle>
-                    <a href="#" class="participate">Приєднатись</a>
-                    <a href="#" class="participate">Цікаво</a>
-                </section>
-                <section class="day">
-                    <arcticle class="date">25 серпня</arcticle>
-                    <arcticle class="event">Велотур "Полісся"</arcticle>
-                    <a href="#" class="participate">Приєднатись</a>
-                    <a href="#" class="participate">Цікаво</a>
-                </section>
-                <section class="day">
-                    <arcticle class="date">24 серпня</arcticle>
-                    <arcticle class="event">Пляжна вечірка в Очакові</arcticle>
-                    <a href="#" class="participate">Приєднатись</a>
-                    <a href="#" class="participate">Цікаво</a>
-                </section>
-                <section class="day">
-                    <arcticle class="date">23 серпня</arcticle>
-                    <arcticle class="event">Похід в Чороногору</arcticle>
-                    <a href="#" class="participate">Приєднатись</a>
-                    <a href="#" class="participate">Цікаво</a>
-                </section>
-                <section class="day">
-                    <arcticle class="date">26 серпня</arcticle>
-                    <arcticle class="event">Тур "Місцями козацької слави"</arcticle>
-                    <a href="#" class="participate">Приєднатись</a>
-                    <a href="#" class="participate">Цікаво</a>
-                </section>
+            <article class="user-stuff" id="user-stuff">
+
             </article>
             <input type="radio" name="user-tabs" id="calendar">
             <article class="user-stuff">
