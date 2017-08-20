@@ -22,3 +22,13 @@ function createTrip() {
 
     addRoute(routeObejct);
 }
+
+function addComment() {
+    var text = document.getElementById("text").value;
+    var x = document.getElementsByName('comment');
+    x[0].submit(); //form submission
+
+    var commentObject = {author: "malinovsky", text: text};
+
+    addComment(commentObject);
+}

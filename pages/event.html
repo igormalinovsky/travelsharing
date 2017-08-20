@@ -14,11 +14,19 @@
     <script src="../resources/js/services/commentsService.js"></script>
     <script src="../resources/js/services/routeServise.js"></script>
     <script src="../resources/js/services/userService.js"></script>
+
+    <script src="../resources/js/utils/preparingUserData.js"></script>
+    <script src="../resources/js/utils/registrationSubmitByName.js"></script>
+
 </head>
 <body>
   <script>
     openDB();
-</script>
+
+    prepareEventInfo("Заїбіще");
+    var tripInfo;
+
+  </script>
     <header>
         <a href="../index.html" class="logo"></a>
         <input type="checkbox" id="seek">
@@ -44,18 +52,14 @@
                 <img src="../resources/img/map-icon.png">
             </button>
         </section>   
-        <section class="event-info">
-            <a href="" class="event-autor"><h2>User Name</h2></a>
-            <h2 class="event-date">23 серпня</h2>
-            <h2 class="event-autor">Free</h2>
-            <p class="event-discription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <section class="event-info" id="event-info">
         </section>
-        <form class="comment">
+        <form class="comment" id="comment" name="comment">
             <p class="addComment">Додати коментар:</p>
-            <textarea style="width:100%" rows="5"></textarea>
+            <input id="text" type="text" name="text" class="registration-input" placeholder="Коментар">
             <br />
             <br />
-            <button class="create-route-btn">Надіслати</button>
+            <button class="create-route-btn" onclick="createUser()">Надіслати</button>
         </form>
     </main>
     <footer>

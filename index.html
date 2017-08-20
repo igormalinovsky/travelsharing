@@ -14,10 +14,14 @@
     <script src="resources/js/services/commentsService.js"></script>
     <script src="resources/js/services/routeServise.js"></script>
     <script src="resources/js/services/userService.js"></script>
+
+    <script src="resources/js/utils/preparingUserData.js"></script>
 </head>
 <body>
     <script>
         openDB();
+        var tripInfo= [];
+        prepareMainPage();
     </script>
 
     <header>
@@ -42,50 +46,9 @@
     <main>
         <section class="events">
             <input type="radio" id="one" name="tab" checked>
-            <article class="type-of-events">
+            <article class="type-of-events" id="type-of-events">
                 <h2 class="event-headers">Море</h2>
-                <a href="" class="event-item">
-                    <img src="resources/img/istanbul.jpg">
-                    <h2>Я люблю Стамбул</h2>
-                    <small>Докладніше→</small>
-                </a>
-                <a href="" class="event-item">
-                    <img src="resources/img/cyprus.jpg">
-                    <h2>Сонячний Кіпр</h2>
-                    <small>Докладніше→</small>
-                </a>
-                <a href="" class="event-item">
-                    <img src="resources/img/barcelona.jpg">
-                    <h2>Пора в Барселону!</h2>
-                    <small>Докладніше→</small>
-                </a>
-                <a href="" class="event-item">
-                    <img src="resources/img/costa-brava.jpg">
-                    <h2>Подорож в Коста-Браву</h2>
-                    <small>Докладніше→</small>
-                </a>
-                <div class="horizontal"></div>
-                <h2 class="event-headers">Гори</h2>
-                <a href="" class="event-item">
-                    <img src="resources/img/st-petersburgs.jpg">
-                    <h2>Північна Пальміра</h2>
-                    <small>Докладніше→</small>
-                </a>
-                <a href="" class="event-item">
-                    <img src="resources/img/tailand.jpg">
-                    <h2>Контрасти Тайланду</h2>
-                    <small>Докладніше→</small>
-                </a>
-                <a href="" class="event-item">
-                    <img src="resources/img/bangkok.jpg">
-                    <h2>Новорічний Бангкок</h2>
-                    <small>Докладніше→</small>
-                </a>
-                <a href="" class="event-item">
-                    <img src="resources/img/prague.jpg">
-                    <h2>П'янка Прага</h2>
-                    <small>Докладніше→</small>
-                </a>
+
             </article>
             <input type="radio" id="two" name="tab">
             <article class="type-of-events">
